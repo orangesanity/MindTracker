@@ -52,7 +52,7 @@
   .stat-label { font-size:10px; text-transform:uppercase; letter-spacing:1.5px; color:var(--text-muted); margin-top:4px; }
   .today-date { font-family:'Space Mono',monospace; font-size:12px; color:var(--text-dim); text-align:center; margin-bottom:14px; }
 
-  /* ─── Sibling Battle ─── */
+  /* ─── Areewood Game Board ─── */
   .sibling-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:16px; margin-bottom:20px; position:relative; overflow:hidden; }
   .sibling-card::before { content:''; position:absolute; top:0; right:0; width:80px; height:80px; background:radial-gradient(circle,rgba(212,160,255,0.08),transparent 70%); }
   .sibling-header { display:flex; align-items:center; gap:8px; margin-bottom:12px; }
@@ -232,9 +232,9 @@
     </div>
     <div class="today-date" id="todayDate"></div>
 
-    <!-- Sibling Battle -->
+    <!-- Areewood Game Board -->
     <div class="sibling-card" id="siblingCard" style="display:none">
-      <div class="sibling-header"><span>⚔️</span><h3>Sibling Battle</h3></div>
+      <div class="sibling-header"><span>⚔️</span><h3>Areewood Game Board</h3></div>
       <div class="sibling-vs">
         <div class="sibling-player">
           <div class="sibling-player-name me">🐉 Esther</div>
@@ -647,7 +647,7 @@ window.backupData = function(){
   document.body.appendChild(a);a.click();document.body.removeChild(a);
 };
 window.resetData = function(){
-  if(confirm('Reset ALL of Eddie\'s training data? This cannot be undone.')){data={days:{},rewards:[]};saveData();renderExercises();renderCalendar();renderRewards();}
+  if(confirm('Reset ALL of Esther\'s training data? This cannot be undone.')){data={days:{},rewards:[]};saveData();renderExercises();renderCalendar();renderRewards();}
 };
 
 // ─── Confetti ───
