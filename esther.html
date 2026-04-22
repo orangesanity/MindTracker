@@ -516,6 +516,8 @@ window.completeWorkout = function() {
   saveData();
   updateStats();
   showCelebration('🏆','WORKOUT COMPLETE!','You are amazing, Esther 💪',false);
+  // Redirect to family hub after celebration
+  setTimeout(function(){ window.location.href = 'index.html'; }, 3200);
 };
 
 function showCelebration(emoji,text,sub,isReward) {
